@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Vitaminator app</string>
+    <string name="TextView">Just a test</string>
+    <string name="take_a_pill_but">Take a pill</string>
+    <string name="check_status_but">Check daily status</string>
+    <string name="list_of_button">List of pills</string>
+    <string name="add_but">Add a pill</string>
+    <string name="remove_but">Remove a pill</string>
+    <string name="exit_but">Exit</string>
+    <string name="text_take_a_pill">Choose a pill to take</string>
+    <string name="howMany">How many</string>
+    <string name="cancel">Cancel</string>
+    <string name="set">Set</string>
+    <string name="add_pill_text">Add a pill</string>
+    <string name="add_pill_hint">Pill name</string>
+    <string name="dose_hint">Dose</string>
+    <string name="add_button_add_a_pill">Add</string>
+    <string name="cancel_button_add_a_pill">Cancel</string>
+    <string name="are_you_sure">Are You sure You want to remove this pill?</string>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+</resources>
