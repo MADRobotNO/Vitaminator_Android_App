@@ -27,7 +27,6 @@ public class DbHand extends SQLiteOpenHelper {
                 " INTEGER PRIMARY KEY, " + Util.KEY_NAME + " TEXT, " + Util.KEY_DOSES
                 + " INTEGER, " + Util.KEY_STATUS + " INTEGER" + ")";
         db.execSQL(CREATE_TABLE);
-
     }
 
     @Override

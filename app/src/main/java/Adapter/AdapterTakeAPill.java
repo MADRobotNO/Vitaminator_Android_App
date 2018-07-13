@@ -27,7 +27,6 @@ public class AdapterTakeAPill extends RecyclerView.Adapter<AdapterTakeAPill.View
     private Context context;
     private ArrayList<Medicine> listItems;
     private DbHand db;
-    private int count;
 
     public AdapterTakeAPill(Context context, ArrayList<Medicine> listitem){
         this.context = context;
@@ -51,6 +50,10 @@ public class AdapterTakeAPill extends RecyclerView.Adapter<AdapterTakeAPill.View
         String desc = "Doses: " + item.getDoses()+", Status: "+item.getStatus();
         holder.description.setText(desc);
 
+        if (listItems.get(position).getStatus()==listItems.get(position).getDoses()){
+            holder.itemView.setClickable(false);
+            holder.layout.setBackgroundColor(holder.layout.getResources().getColor(R.color.colorPurple));
+        }
     }
 
     @Override
@@ -70,12 +73,6 @@ public class AdapterTakeAPill extends RecyclerView.Adapter<AdapterTakeAPill.View
             name = itemView.findViewById(R.id.title);
             description = itemView.findViewById(R.id.description);
             layout = itemView.findViewById(R.id.take_pill_lay_id);
-
-            if (listItems.get(count).getStatus()==listItems.get(count).getDoses()){
-                itemView.setClickable(false);
-                layout.setBackgroundColor(layout.getResources().getColor(R.color.colorPurple));
-            }
-            count++;
 
         }
 

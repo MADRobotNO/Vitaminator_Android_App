@@ -16,11 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".AlertReciever"
+            android:enabled="true"
+            android:exported="true"/>
         <activity android:name=".Check_daily_status" />
         <activity android:name=".Take_a_pill" />
         <activity android:name=".List_of_pills" />
         <activity android:name=".Add_a_pill" />
         <activity android:name=".Remove_a_pill"></activity>
+
+
     </application>
 
 </manifest>
